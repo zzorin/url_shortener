@@ -1,24 +1,6 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Cервис сокращения ссылок. Данный сервис реализует 3
+запроса:
+POST /urls (ссылка отправляется в параметре :url) возвращает короткий url
+GET /urls/:short_url возвращает длинный URL и увеличивает счетчик запросов на 1
+GET /urls/:short_url/stats возвращает количество переходов по URL
